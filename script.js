@@ -7,7 +7,7 @@ const loadingScreen = document.querySelector(".loading-container");
 const userInfoContainer = document.querySelector(".user-info-container");
 const notFound = document.querySelector("[data-notFound]");
 
-const API_key = ;
+const API_key = process.env.OPENWEATHER_KEY;
 let oldTab = userTab;
 oldTab.classList.add("current-tab");
 getFromSessionStorage();
